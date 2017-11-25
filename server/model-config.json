@@ -12,5 +12,9 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "users": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
