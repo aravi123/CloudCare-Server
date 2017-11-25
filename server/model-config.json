@@ -16,5 +16,9 @@
   "users": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "medicalRecords": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
