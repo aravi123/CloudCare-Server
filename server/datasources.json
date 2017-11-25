@@ -1,0 +1,12 @@
+{
+  "mongodb": {
+    "host": "ds119406.mlab.com",
+    "port": 19406,
+    "url": "mongodb://cloudcare:carehack@ds119406.mlab.com:19406/cloudcare",
+    "database": "cloudcare",
+    "password": "carehack",
+    "name": "mongodb",
+    "user": "cloudcare",
+    "connector": "mongodb"
+  }
+}
