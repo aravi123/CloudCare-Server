@@ -20,5 +20,9 @@
   "medicalRecords": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "doctors": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

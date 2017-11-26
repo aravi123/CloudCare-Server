@@ -31,9 +31,17 @@ let p2p = (data,db)=>{
         transporter.sendMail(mailOptions,(err,info)=>{
           if(!err){
             console.log(info);
-            db.models.medicalRecords.create({genesisHash:data.nextHash},(err)=>{
+            db.models.medicalRecords.create({currentHash:data.nextHash},(err)=>{
               if(!err){
-                resolve(hash);
+                db.models.users.updateAll({googleId:data.googleId},{aadharid:data.adhaarid},(err)=>{
+                  if(!err){
+                    let data1 = {hash:hash,nexthash:data.nextHash};
+                    resolve(data1);
+                  }
+                  else{
+                    reject(err);
+                  }
+                });
               }
               else{
                 console.log(err);

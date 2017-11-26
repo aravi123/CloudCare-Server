@@ -7,6 +7,7 @@
     "password": "carehack",
     "name": "mongodb",
     "user": "cloudcare",
-    "connector": "mongodb"
+    "connector": "mongodb",
+    "allowExtendedOperators":true
   }
 }
